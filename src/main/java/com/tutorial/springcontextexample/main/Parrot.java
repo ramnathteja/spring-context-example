@@ -1,5 +1,6 @@
 package com.tutorial.springcontextexample.main;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,5 +13,10 @@ public class Parrot {
 
     public String getName() {
         return this.name;
+    }
+
+    @PostConstruct
+    public void init() {
+        this.name = "Miki";
     }
 }
