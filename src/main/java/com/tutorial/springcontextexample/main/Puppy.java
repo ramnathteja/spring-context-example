@@ -1,6 +1,6 @@
 package com.tutorial.springcontextexample.main;
 
-public class Parrot {
+public class Puppy {
     private String name;
 
     public void setName(String name) {
@@ -8,7 +8,6 @@ public class Parrot {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
-
 }
